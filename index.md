@@ -29,7 +29,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-<h3>This class is not yet open however if you would like to be notified when available, please complete this form: <a href="http://goo.gl/forms/OzcK6M9XOeN8ifr52">Interested in programming classes</a>.</h3>
+<h3>This class is not yet open however if you would like to be notified when available, please complete this form: <a href="http://goo.gl/forms/OzcK6M9XOeN8ifr52">Interested in programming classes</a>.</h3><br><br>
 
 
 <h2 id="general">General Information</h2>
