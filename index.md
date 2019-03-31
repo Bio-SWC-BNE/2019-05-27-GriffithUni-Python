@@ -262,7 +262,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p></p>
 <p>Please unzip after downloading. If you are in Mac or Linux, you can use the following commands:</p>
 <p></p>
-<p>Windows: you can download it and move it to the folder you plan on working in, then unzip it by right clicking</p>
+<p>Windows: Install Windows For Linux Subsystem then use the following commands in the program:</p>
+<p>wget http://swcarpentry.github.io/shell-novice/data/shell-novice-data.zip</p>
 <p></p>
 <p>Mac:</p>
 <p>curl -O http://swcarpentry.github.io/shell-novice/data/shell-novice-data.zip</p>
