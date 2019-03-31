@@ -11,8 +11,8 @@ humandate: "15th-17th April"    # human-readable dates for the workshop (e.g., "
 humantime: "9am to 5pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-04-15      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-04-17        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["To come"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["To come"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Masami Yamaguchi", "Ido Bar","Heidi Perrett", "Amanda Miotto"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Masami Yamaguchi", "Ido Bar"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["hackyhour@griffith.edu.au"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -362,10 +362,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       
       Today we will be using the Windows Subsystem Linux (Ubuntu flavor). Please install as per this site 
       <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Install Win 10</a>
-          </ol>
-        </li>
-      </ol>
-      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">macOS</h4>
@@ -419,6 +415,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         Git should be installed on in Ubuntu/Windows Linux Subsystem (described above).
         Please open the Terminal app, type <code>sudo apt install git</code> and press 
         <kbd>Enter</kbd>
+        It will ask you "Do you want to continue?" - Please press Yes.
       </p>
     </div>
     <div class="col-md-4">
