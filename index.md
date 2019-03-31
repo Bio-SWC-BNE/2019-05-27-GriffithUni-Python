@@ -522,23 +522,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     well.  Installing all of its research packages individually can be
     a bit difficult, so we recommend
     <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
-    an all-in-one installer.
+    an all-in-one installer. Once it is installed, we will be using <b>Spyder</b> as the IDE to run Python.
   </p>
 
     <p>
       Regardless of how you choose to install it,
       <strong>please make sure you install Python version 3.x</strong>
       (e.g., 3.6 is fine).
-    </p>
-
-    <p>
-      We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
-      a programming environment that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all
-      <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
-      (some older browsers, including Internet Explorer version 9
-      and below, are not).
     </p>
 
   <div class="row">
