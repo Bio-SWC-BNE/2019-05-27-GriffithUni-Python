@@ -375,6 +375,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         for an example on how to open the Terminal.
         You may want to keep
         Terminal in your dock for this workshop.
+        
+        
+        If you would like to use a different terminal system, or are operating on Windows 7, please see the install for Git for Windows on the <a href='http://swcarpentry.github.io/shell-novice/setup.html'> Setup for Bash Software Carpentry page</a> .  If you are using Git for Windows, you will not need to install Git separately. 
       </p>
     </div>
     <div class="col-md-4">
