@@ -363,6 +363,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       
       Today we will be using the Windows Subsystem Linux (Ubuntu flavor). Please install as per this site 
       <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Install Win 10</a>
+         If you would like to use a different terminal system, or are operating on Windows 7, please see the install for Git for Windows on the <a href='http://swcarpentry.github.io/shell-novice/setup.html'> Setup for Bash Software Carpentry page</a> .  If you are using Git for Windows, you will not need to install Git separately. 
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">macOS</h4>
@@ -377,7 +378,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         Terminal in your dock for this workshop.
         
         
-        If you would like to use a different terminal system, or are operating on Windows 7, please see the install for Git for Windows on the <a href='http://swcarpentry.github.io/shell-novice/setup.html'> Setup for Bash Software Carpentry page</a> .  If you are using Git for Windows, you will not need to install Git separately. 
+     
       </p>
     </div>
     <div class="col-md-4">
