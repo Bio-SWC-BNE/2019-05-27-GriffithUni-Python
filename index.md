@@ -446,7 +446,8 @@ er</a>.</li>
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
 
-<div id="git"> {% comment %} Start of 'Git' section. {% endcomment %}
+<div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
+  is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
   <p>
     Git is a version control system that lets you track who made changes
@@ -463,43 +464,47 @@ er</a>.</li>
     Please consider what personal information you'd like to reveal. For
     example, you may want to review these
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
+      for keeping your email address private</a> provided at GitHub.
   </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-      <p>
-        Git should be installed on in GitBash for Windows (described above).
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-macosx">macOS</h4>
-      <p>
-        Please open the Terminal app, type <code>git --version</code> and press 
-        <kbd>Enter</kbd>/<kbd>Return</kbd>. If it's not installed already, 
-        follow the instructions to <code>Install</code> the "command line 
-        developer tools". <strong>Don't click</strong> "Get Xcode", because that will 
-        take too long and is not necessary for our Git lesson.
-        After installing these tools, there won't be anything in your <code>/Applications</code>
-        folder, as they and Git are command line programs.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-        Because this installer is not signed by the developer, you may have to
-        right click (control click) on the .pkg file, click Open, and click
-        Open in the pop-up dialog. You can watch 
-        <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">a video tutorial about this case</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo dnf install git</code>.
-      </p>
+  <div>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#git-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#git-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#git-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="git-windows">
+        <p>
+          Git should be installed on your computer as part of your Bash
+          install (described above).
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="git-macos">
+        <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
+        <p>
+          <strong>For OS X 10.9 and higher</strong>, install Git for Mac
+          by downloading and running the most recent "mavericks" installer from
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+          Because this installer is not signed by the developer, you may have to
+          right click (control click) on the .pkg file, click Open, and click
+          Open on the pop up window. 
+          After installing Git, there will not be anything in your <code>/Applications</code> folder,
+          as Git is a command line program.
+          <strong>For older versions of OS X (10.5-10.8)</strong> use the
+          most recent available installer labelled "snow-leopard"
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="git-linux">
+        <p>
+          If Git is not already available on your machine you can try to
+          install it via your distro's package manager. For Debian/Ubuntu run
+          <code>sudo apt-get install git</code> and for Fedora run
+          <code>sudo dnf install git</code>.
+        </p>
+      </article>
     </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
@@ -518,56 +523,61 @@ er</a>.</li>
     return to the shell.
   </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="editor-windows">Windows</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It is installed along with Git.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="https://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-macosx">macOS</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-        for an example on how to open nano.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
-        <a href="https://www.sublimetext.com/">Sublime Text</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-        <a href="https://kate-editor.org/">Kate</a> or
-        <a href="https://www.sublimetext.com/">Sublime Text</a>.
-      </p>
+  <div>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="editor-windows">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It is installed along with Git.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://notepad-plus-plus.org/">Notepad++</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+          <strong>Be aware that you must
+            add its installation directory to your system path.</strong>
+          Please ask your instructor to help you do this.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="editor-macos">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+          for an example on how to open nano.
+          It should be pre-installed.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="editor-linux">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It should be pre-installed.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+          <a href="https://kate-editor.org/">Kate</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+        </p>
+      </article>
     </div>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
-           the workshop will teach Python using something other than
-           the Jupyter notebook.
-           Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
+  the workshop will teach Python using something other than
+  the Jupyter notebook.
+  Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
   <h3>Python</h3>
 
   <p>
@@ -576,73 +586,88 @@ er</a>.</li>
     well.  Installing all of its research packages individually can be
     a bit difficult, so we recommend
     <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
-    an all-in-one installer. Once it is installed, we will be using <b>Spyder</b> as the IDE to run Python.
+    an all-in-one installer.
   </p>
 
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.6 is fine).
-    </p>
+  <p>
+    Regardless of how you choose to install it,
+    <strong>please make sure you install Python version 3.x</strong>
+    (e.g., 3.6 is fine).
+  </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="python-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#windows">https://www.anaconda.com/download/#windows</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Windows.</li>
-        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Add Anaconda to my PATH environment variable</strong>.</li>
-      </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="python-macosx">macOS</h4>
-      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
-        <li>Download the Python 3 installer for OS X.</li>
-        <li>Install Python 3 using all of the defaults for installation.</li>
-      </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="python-linux">Linux</h4>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Linux.<br>
-          (The installation requires using the shell. If you aren't
-           comfortable doing the installation yourself
-           stop here and request help at the workshop.)
-        </li>
-        <li>
-          Open a terminal window.
-        </li>
-        <li>
-          Type <pre>bash Anaconda3-</pre> and then press
-          <kbd>Tab</kbd>. The name of the file you just downloaded should
-          appear. If it does not, navigate to the folder where you
-          downloaded the file, for example with:
-          <pre>cd Downloads</pre>
-          Then, try again.
-        </li>
-        <li>
-          Press <kbd>Return</kbd>. You will follow the text-only prompts. To move through
-          the text, press <kbd>Spacebar</kbd>. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
-        </li>
-        <li>
-          Close the terminal window.
-        </li>
-      </ol>
+  <p>
+    We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
+    a programming environment that runs in a web browser. For this to work you will need a reasonably
+    up-to-date browser. The current versions of the Chrome, Safari and
+    Firefox browsers are all
+    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
+    (some older browsers, including Internet Explorer version 9
+    and below, are not).
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#python-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#python-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#python-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="python-windows">
+        <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/download/#windows">https://www.anaconda.com/download/#windows</a> with your web browser.</li>
+          <li>Download the Python 3 installer for Windows.</li>
+          <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Add Anaconda to my PATH environment variable</strong>.</li>
+        </ol>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="python-macos">
+        <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
+          <li>Download the Python 3 installer for OS X.</li>
+          <li>Install Python 3 using all of the defaults for installation.</li>
+        </ol>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="python-linux">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
+          <li>Download the Python 3 installer for Linux.<br>
+            (The installation requires using the shell. If you aren't
+            comfortable doing the installation yourself
+            stop here and request help at the workshop.)
+          </li>
+          <li>
+            Open a terminal window.
+          </li>
+          <li>
+            Type <pre>bash Anaconda3-</pre> and then press
+            <kbd>Tab</kbd>. The name of the file you just downloaded should
+            appear. If it does not, navigate to the folder where you
+            downloaded the file, for example with:
+            <pre>cd Downloads</pre>
+            Then, try again.
+          </li>
+          <li>
+            Press <kbd>Return</kbd>. You will follow the text-only prompts. To move through
+            the text, press <kbd>Spacebar</kbd>. Type <code>yes</code> and
+            press enter to approve the license. Press enter to approve the
+            default location for the files. Type <code>yes</code> and
+            press enter to prepend Anaconda to your <code>PATH</code>
+            (this makes the Anaconda distribution the default Python).
+          </li>
+          <li>
+            Close the terminal window.
+          </li>
+        </ol>
+      </article>
     </div>
   </div>
-{% comment %}
+  {% comment %}
   <p>
-  Once you are done installing the software listed above,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
+    Once you are done installing the software listed above,
+    please go to <a href="setup/index.html">this page</a>,
+    which has instructions on how to test that everything was installed correctly.
   </p>
-{% endcomment %}
+  {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
