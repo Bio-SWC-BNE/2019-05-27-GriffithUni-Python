@@ -262,7 +262,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p></p>
 <p>Please unzip after downloading. If you are in Mac or Linux, you can use the following commands:</p>
 <p></p>
-<p>Windows: Install Windows For Linux Subsystem then use the following commands in the program:</p>
+<p>Windows: Install Git for Windows then use the following commands in the program:</p>
 <p>wget http://swcarpentry.github.io/shell-novice/data/shell-novice-data.zip</p>
 <p></p>
 <p>Mac:</p>
@@ -455,10 +455,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
       <p>
-        Git should be installed on in Ubuntu/Windows Linux Subsystem (described above).
-        Please open the Terminal app, type <code>sudo apt install git</code> and press 
-        <kbd>Enter</kbd>
-        It will ask you "Do you want to continue?" - Please press Yes.
+        Git should be installed on in GitBash for Windows (described above).
       </p>
     </div>
     <div class="col-md-4">
